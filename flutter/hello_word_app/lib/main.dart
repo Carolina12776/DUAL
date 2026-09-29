@@ -6,7 +6,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});//clase que nos permite crear la app
-
   @override  //metodo que nos permite construir la app
   Widget build(BuildContext context) { 
     return const MaterialApp( //widget principal de la app dice que dise;o usar el material design
@@ -21,4 +20,5 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+  
 }
