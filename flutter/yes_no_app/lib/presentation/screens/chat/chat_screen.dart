@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yes_no_app/presentation/widgets/chat/her_message_bubble.dart';
 import 'package:yes_no_app/presentation/widgets/chat/my_message_bubble.dart';
+import 'package:yes_no_app/presentation/widgets/shared/message_field_box.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -40,8 +41,9 @@ class _ChatView extends StatelessWidget {
                  ? const HerMessageBubble() 
                : const MyMessageBubble();
               })),
-
-            Text('Hola, como estas?')
+              //caja de texto de emnsajes
+             const MessageFieldBox(),
+            
           ],
         ),
       ),
