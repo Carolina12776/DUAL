@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyMessageBubble extends StatelessWidget {
-  const MyMessageBubble({super.key});
+class HerMessageBubble extends StatelessWidget {
+  const HerMessageBubble({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,23 +9,37 @@ class MyMessageBubble extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.end,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+
         Container(
         decoration: BoxDecoration(
-          color: colors.primary, borderRadius: BorderRadius.circular(20)),
+          color: colors.secondary,
+           borderRadius: BorderRadius.circular(20)),
         
         child: const Padding(
           padding:  EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Text(
-            'Laboris duisdolore',
+            'hola',
             style: TextStyle(color: Colors.white),
             ),
         ),
     ),
-    const SizedBox(height: 10)
+    
+    const SizedBox(height: 10),
+   _ImageBubble(),
+
+
+    //imagen de la burbuja de chat
       ],
     );
   }
-  
 } 
+
+class _ImageBubble extends StatelessWidget {
+  
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
