@@ -2,20 +2,17 @@ import 'package:flutter/material.dart';
 
 
 class CounterFunctionsScreen extends StatefulWidget {
+const CounterFunctionsScreen({super.key});
 
-
-
-  const CounterFunctionsScreen({super.key});
-
-  @override
+@override
   State<CounterFunctionsScreen> createState() => _CounterScreenState();
-}
-class _CounterScreenState extends State<CounterFunctionsScreen> {
+  }
+    class _CounterScreenState extends State<CounterFunctionsScreen> {
 
-int clickCounter = 0;
+    int clickCounter = 0;
 
-
-  Widget build(BuildContext context) {
+@override
+Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
         title: const Text('Counter functions'),
